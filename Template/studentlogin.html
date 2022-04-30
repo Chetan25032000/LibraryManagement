@@ -1,0 +1,39 @@
+<html lang="en" dir="ltr">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>LMS Django</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+
+    <div class="signup-form">
+        <form method="post" class="form-horizontal" action="/">
+
+    			<center><h2>Student Login</h2></center>
+
+<input type="hidden" name="csrfmiddlewaretoken" value="7mzYZIpOwyUVsU83UtbU9r2fDp4jVAQt3a2xrhXaM4CwLm3SMqoan8JGRU7jNUgb">
+
+            <div class="form-group text-center">
+              <label class="control-label col-xs-4"><label for="id_username">Username:</label></label>
+              <div class="col-xs-8">
+              <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+               </div>
+            </div>
+
+            <div class="form-group text-center">
+              <label class="control-label col-xs-4"><label for="id_password">Password:</label></label>
+              <div class="col-xs-8">
+              <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+               </div>
+            </div>
+    		<div class="form-group text-center">
+    			<div class="col-xs-8 col-xs-offset-4">
+            <button type="submit" class="btn btn-success btn-lg" style="border-radius: 0%;" href="afterlogin">Login</button>
+    			</div>
+    		</div>
+        </form>
+    	<div class="text-center">Do not have account? <a href="studentsignup">Signup here</a></div>
+    </div>
+</body>
+</html>

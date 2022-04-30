@@ -1,0 +1,73 @@
+<html lang="en" dir="ltr">
+<head>
+</head>
+<body style="background-color:#b6bde7;">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <br>
+    <div class="signup-form">
+        <form method="post" class="form-horizontal">
+
+    			<center><h2>ADD BOOK IN LIBRARY</h2></center>
+
+		<input type="hidden" name="csrfmiddlewaretoken" value="SOWkUINJfKYt6yzXKCZVK4LZp3jDATp9N5a6Hdhh3ESfGjVZNTH3uQ7VNlytgyPd">
+
+
+            <div class="form-group text-center">
+              <label class="control-label col-xs-4"><label for="id_name">Name:</label></label>
+              <div class="col-xs-8">
+              <input type="text" name="name" maxlength="30" required="" id="id_name">
+               </div>
+            </div>
+
+            <div class="form-group text-center">
+              <label class="control-label col-xs-4"><label for="id_isbn">Isbn:</label></label>
+              <div class="col-xs-8">
+              <input type="number" name="isbn" min="0" required="" id="id_isbn">
+               </div>
+            </div>
+
+            <div class="form-group text-center">
+              <label class="control-label col-xs-4"><label for="id_author">Author:</label></label>
+              <div class="col-xs-8">
+              <input type="text" name="author" maxlength="40" required="" id="id_author">
+               </div>
+            </div>
+
+            <div class="form-group text-center">
+              <label class="control-label col-xs-4"><label for="id_category">Category:</label></label>
+              <div class="col-xs-8">
+              <select name="category" id="id_category">
+  <option value="education" selected="">Education</option>
+
+  <option value="entertainment">Entertainment</option>
+
+  <option value="comics">Comics</option>
+
+  <option value="biography">Biography</option>
+
+  <option value="history">History</option>
+
+  <option value="novel">Novel</option>
+
+  <option value="fantasy">Fantasy</option>
+
+  <option value="thriller">Thriller</option>
+
+  <option value="romance">Romance</option>
+
+  <option value="scifi">Sci-Fi</option>
+
+</select>
+    </div>
+            </div>
+    		<div class="form-group text-center">
+    			<div class="col-xs-8 col-xs-offset-4">
+            <button type="submit" class="btn btn-success btn-lg" style="border-radius: 0%;">ADD</button>
+    			</div>
+    		</div>
+        </form>
+    	<div class="text-center">View Available Book In Library<a href="viewbook">Click here</a></div>
+    </div>
+
+</body>
+</html>
